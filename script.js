@@ -2,6 +2,12 @@
 // ELEMENTS
 // ===========================
 
+const proposalPage=document.getElementById("proposalPage");
+
+const yesBtn=document.getElementById("yesBtn");
+
+const noBtn=document.getElementById("noBtn");
+
 const passwordPage = document.getElementById("passwordPage");
 
 const passwordInput = document.getElementById("passwordInput");
@@ -633,3 +639,51 @@ setTimeout(()=>{
     console.log("Happy Girlfriend's Day ❤️");
 
 },1000);
+
+// =========================================
+// Proposal
+// =========================================
+
+noBtn.addEventListener("touchstart",()=>{
+
+    noBtn.style.position="absolute";
+
+    noBtn.style.left=Math.random()*70+"%";
+
+    noBtn.style.top=Math.random()*70+"%";
+
+});
+
+
+yesBtn.addEventListener("click",()=>{
+
+proposalPage.innerHTML=`
+
+<div class="proposal-card">
+
+<div style="font-size:120px;">❤️</div>
+
+<h1>She Said YES!! 💍</h1>
+
+<p class="proposal-text">
+
+From this moment...
+
+Every sunrise...
+
+Every adventure...
+
+Every dream...
+
+Will be ours together.
+
+I Love You Forever ❤️
+
+</p>
+
+</div>
+
+`;
+
+});
+
