@@ -45,13 +45,16 @@ page.classList.add("active");
 // START BUTTON
 // ===========================
 
-startBtn.addEventListener("click",()=>{
+const music = document.getElementById("music");
 
-music.play().catch(()=>{});
+startBtn.addEventListener("click", () => {
 
-showPage(scanner);
+    music.volume = 0.4; // 40% volume
+    music.play().catch(err => console.log(err));
 
-startScanner();
+    showPage(scanner);
+
+    startScanner();
 
 });
 
