@@ -453,9 +453,12 @@ font-size:40px;
 }
 
 .password-box h1{
-    color:#fff;
-    margin-bottom:20px;
-    font-size:28px;
+    font-size: clamp(26px, 5vw, 40px);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .riddle{
