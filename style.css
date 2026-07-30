@@ -497,3 +497,101 @@ font-size:40px;
     margin-top:15px;
     font-weight:bold;
 }
+#proposalPage{
+
+    background:#050816;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+}
+
+.proposal-card{
+
+    width:90%;
+
+    max-width:600px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(20px);
+
+}
+
+.ring{
+
+    font-size:90px;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+
+}
+
+.proposal-card h1{
+
+    color:white;
+
+    margin:20px 0;
+
+}
+
+.proposal-text{
+
+    color:white;
+
+    line-height:1.9;
+
+    margin:30px 0;
+
+}
+
+.proposal-card h2{
+
+    color:#ff8fb3;
+
+    font-size:36px;
+
+    margin-bottom:30px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.buttons button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
