@@ -103,7 +103,7 @@ setTimeout(()=>{
 
 showPage(passwordPage);
     
-const PASSWORD = "1317";
+const PASSWORD = "13178";
 
 unlockBtn.addEventListener("click",()=>{
 
