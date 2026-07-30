@@ -436,3 +436,82 @@ font-size:40px;
 }
 
 }
+/* --------------------
+   Password
+--------------------- */
+.password-box{
+    width:90%;
+    max-width:360px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    text-align:center;
+}
+
+.password-box h1{
+    margin-bottom:15px;
+}
+
+.password-box p{
+    margin-bottom:20px;
+}
+
+.password-box input{
+
+    width:100%;
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+.password-box button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+#wrongPassword{
+
+    color:#ff7070;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+.shake{
+
+    animation:shake .4s;
+
+}
+
+@keyframes shake{
+
+0%{transform:translateX(0);}
+25%{transform:translateX(-10px);}
+50%{transform:translateX(10px);}
+75%{transform:translateX(-10px);}
+100%{transform:translateX(0);}
+
+}
