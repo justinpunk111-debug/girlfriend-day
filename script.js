@@ -240,7 +240,7 @@ setInterval(createHeart,500);
 // TYPEWRITER LOVE LETTER
 // =====================================
 
-const message = `My Dearest Reesha ❤️
+const message = `My Dearest Reesha My Rasmalai ❤️
 
 Happy Girlfriend's Day!
 
@@ -271,7 +271,7 @@ I love you more than words can express.
 
 Forever Yours,
 
-Piyush ❤️`;
+Piyush Your Gulab Jamun❤️`;
 
 let charIndex = 0;
 
