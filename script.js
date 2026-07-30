@@ -2,6 +2,14 @@
 // ELEMENTS
 // ===========================
 
+const passwordPage = document.getElementById("passwordPage");
+
+const passwordInput = document.getElementById("passwordInput");
+
+const unlockBtn = document.getElementById("unlockBtn");
+
+const wrongPassword = document.getElementById("wrongPassword");
+
 const pages = document.querySelectorAll(".page");
 
 const intro = document.getElementById("intro");
@@ -93,10 +101,42 @@ clearInterval(interval);
 
 setTimeout(()=>{
 
-showPage(gallery);
+showPage(passwordPage);
+    
+const PASSWORD = "1317";
 
-startSlideshow();
+unlockBtn.addEventListener("click",()=>{
 
+if(passwordInput.value.toLowerCase()===PASSWORD){
+
+    wrongPassword.innerHTML="";
+
+    unlockBtn.innerHTML="Unlocked ❤️";
+
+    setTimeout(()=>{
+
+        showPage(gallery);
+
+        startSlideshow();
+
+    },800);
+
+}
+else{
+
+    wrongPassword.innerHTML="Wrong Password ❤️";
+
+    passwordInput.classList.add("shake");
+
+    setTimeout(()=>{
+
+        passwordInput.classList.remove("shake");
+
+    },400);
+
+}
+
+});
 },1200);
 
 }
